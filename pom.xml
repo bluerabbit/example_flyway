@@ -16,6 +16,18 @@
         <finalName>example_flyway</finalName>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
               <groupId>org.flywaydb</groupId>
               <artifactId>flyway-maven-plugin</artifactId>
               <version>3.0</version>
